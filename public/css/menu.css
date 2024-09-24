@@ -1,0 +1,80 @@
+/* variables de color */
+:root{
+    --color-bg: linear-gradient(to right, #121327, #1A3533);
+    --color-bg1: linear-gradient(to left, #1A3533, #172029);
+    --color-bg2: linear-gradient(to left, #012971, #1a9092);
+    --color-bg3: linear-gradient(to left, #a3b2d6, #269496);
+    --color-bg4: linear-gradient(to left, rgb(212, 204, 226), #269496);
+    --link-hover-color: rgb(104,243, 169);
+}
+/* Disenio de los iconos */
+.bi-brilliance{
+    color: #B1B5BA;
+    padding-left: 12px;
+}
+.bi-brilliance:hover{
+    color: rgb(0, 0, 0);
+}
+.nombre{
+    color: rgba(119, 161, 104, 0.747);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 8px;
+}
+/* Disenio del Menu*/
+#menu{
+    background-image:  var(--color-bg1);
+    margin-top: 10px;
+    margin-left: 0%;
+    height: 60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image:  var(--color-bg);
+}
+.nav-item{
+    margin-top: 4px;
+    margin-left: 4px;
+}
+#myMenu{
+    margin-right: 11vmin;
+    padding-left: 25px;
+}
+.nav-link{
+    color: #93c0bd;
+}
+.nav-link::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background-color: var(--link-hover-color);
+    display: block;
+    transition: all 300ms;
+}
+.nav-link:hover::after{
+    width: 100%;
+}
+.nav-link:hover{
+    color: antiquewhite;
+}
+#myMenu li a.active {
+    color: rgb(56, 192, 97)
+}
+#myMenu li a.active:hover {
+    color: rgba(50, 179, 114, 0.718);
+}
+.nav-item .dropdown{
+    color: rgba(50, 179, 114, 0.718);
+}
+/* submenu */
+.dropdown-menu{
+    background-image: var(--color-bg3);
+    border-radius: none;
+}
+.dropdown-item{
+    color: rgb(0 57 85 / 93%);
+}
+.dropdown-item:hover{
+    background-image: var(--color-bg4);
+}
+
+
